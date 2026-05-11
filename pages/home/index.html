@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribulex | Más que una asesoría: tu equipo para emprender</title>
+    <meta name="description" content="Asesoría fiscal, laboral y jurídica para emprendedores, autónomos y empresas en la Región de Murcia. Plan Emprendedor con Bono Tecnológico de 250€.">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <!-- Top Bar -->
+        <div class="topbar">
+            <div class="container topbar-content">
+                <div class="topbar-left">
+                    <a href="tel:968636018" class="topbar-item">
+                        <i data-lucide="phone"></i> 968 636 018
+                    </a>
+                    <a href="mailto:info@tribulex.es" class="topbar-item">
+                        <i data-lucide="mail"></i> info@tribulex.es
+                    </a>
+                </div>
+                <a href="https://tribulex.asesoriaweb.com" class="topbar-item topbar-access" target="_blank" rel="noopener">
+                    <i data-lucide="log-in"></i> Acceso clientes
+                </a>
+            </div>
+        </div>
+        <div class="container nav-content">
+            <a href="#inicio" class="logo">
+                <img src="../../assets/logo/logo-tribulex-blanco.svg" alt="Tribulex">
+            </a>
+
+            <nav class="nav-links" id="nav-links">
+                <!-- Mobile menu header with close button -->
+                <div class="mobile-menu-header" id="mobile-menu-header">
+                    <a href="#inicio" class="logo">
+                        <img src="../../assets/logo/logo-tribulex-blanco.svg" alt="Tribulex">
+                    </a>
+                    <button class="mobile-close-btn" id="mobile-close-btn" aria-label="Cerrar menú">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+                <div class="mobile-menu-body">
+                    <div class="nav-item has-dropdown">
+                        <a>Emprendedores <i data-lucide="chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="#plan-emprendedor" class="dropdown-item">Plan Emprendedor</a>
+                            <a href="#plan-emprendedor" class="dropdown-item">Capitalización del paro</a>
+                            <a href="#plan-emprendedor" class="dropdown-item">Bono Tecnológico 250€</a>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a>Autónomos <i data-lucide="chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="#servicios" class="dropdown-item">Servicios para autónomos</a>
+                            <a href="#tu-oficina" class="dropdown-item">Tu Oficina en Tribulex</a>
+                        </div>
+                    </div>
+                    <div class="nav-item has-dropdown">
+                        <a>Empresas <i data-lucide="chevron-down"></i></a>
+                        <div class="dropdown">
+                            <a href="#servicios" class="dropdown-item">Servicios para empresas</a>
+                            <a href="#servicios" class="dropdown-item">Asesoría jurídico-mercantil</a>
+                        </div>
+                    </div>
+                    <a href="#tu-oficina" class="nav-item-link">Tu Oficina</a>
+                    <a href="#servicios" class="nav-item-link">Abogados</a>
+                    <a href="#blog" class="nav-item-link">Actualidad</a>
+                    <a href="#contacto" class="nav-item-link">Contacto</a>
+                </div>
+                <!-- Mobile menu footer CTA -->
+                <div class="mobile-menu-footer" id="mobile-menu-footer">
+                    <a href="#contacto" class="btn btn-gold mobile-menu-cta">Primera consulta gratuita</a>
+                    <div class="mobile-menu-contact">
+                        <a href="tel:968636018"><i data-lucide="phone"></i> 968 636 018</a>
+                        <a href="mailto:info@tribulex.es"><i data-lucide="mail"></i> info@tribulex.es</a>
+                    </div>
+                </div>
+            </nav>
+            <!-- Mobile overlay backdrop -->
+            <div class="mobile-overlay" id="mobile-overlay"></div>
+
+            <div class="nav-right">
+                <a href="#contacto" class="btn btn-cta-nav">Primera consulta gratuita</a>
+                <button class="mobile-menu-btn" id="mobile-btn" aria-label="Abrir menú">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ① HERO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-layout">
+
+                <!-- Columna izquierda: texto -->
+                <div class="hero-text">
+                    <div class="hero-eyebrow animate-up">
+                        <span class="eyebrow-dot"></span>
+                        Asesoría en la Región de Murcia
+                    </div>
+                    <h1 class="animate-up delay-1">Arranca tu negocio con el equipo que te acompaña desde el primer día</h1>
+                    <p class="hero-body animate-up delay-2">En Tribulex no solo gestionamos tus impuestos. Te ayudamos a poner en marcha tu actividad, ordenamos tu administración y te equipamos con la tecnología que necesitas para crecer.</p>
+                    <div class="hero-actions animate-up delay-2">
+                        <a href="#plan-emprendedor" class="btn btn-hero-primary">Descubre el Plan Emprendedor</a>
+                        <a href="#contacto" class="btn btn-hero-ghost">Primera consulta gratuita</a>
+                    </div>
+                    <div class="hero-stats animate-up delay-2">
+                        <div class="hstat">
+                            <strong>+25</strong>
+                            <span>años de experiencia</span>
+                        </div>
+                        <div class="hstat-sep"></div>
+                        <div class="hstat">
+                            <strong>+1.800</strong>
+                            <span>clientes en Murcia</span>
+                        </div>
+                        <div class="hstat-sep"></div>
+                        <div class="hstat">
+                            <strong>14</strong>
+                            <span>profesionales</span>
+                        </div>
+                        <div class="hstat-sep"></div>
+                        <div class="hstat">
+                            <strong>3</strong>
+                            <span>oficinas en la región</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna derecha: tarjeta Plan Emprendedor -->
+                <div class="hero-card animate-up delay-1">
+                    <div class="hcard-label">★ Servicio estrella</div>
+                    <h3>Plan Emprendedor</h3>
+                    <p>De la idea a la facturación, sin sustos ni papeles que se pierdan.</p>
+                    <ul class="hcard-list">
+                        <li>Alta censal y en el RETA</li>
+                        <li>Capitalización del paro</li>
+                        <li>Tarifa plana y bonificaciones</li>
+                        <li>Subvenciones e incentivos</li>
+                        <li>Asesoría recurrente incluida</li>
+                    </ul>
+                    <div class="hcard-bono">
+                        <i data-lucide="gift"></i>
+                        <span>Bono Tecnológico <strong>250€ incluido</strong></span>
+                    </div>
+                    <a href="#plan-emprendedor" class="btn btn-gold hcard-cta">Ver el plan completo <i data-lucide="arrow-right"></i></a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ③ ¿CUÁL ES TU SITUACIÓN? -->
+        <section id="situacion" class="section-padding sit3-section">
+            <div class="container">
+                <div class="sit3-header">
+                    <div>
+                        <p class="sec-eyebrow">¿Cuál es tu situación?</p>
+                        <h2>Trabajamos con perfiles muy distintos</h2>
+                    </div>
+                    <p class="sit3-subtitle">Cuéntanos el tuyo y te orientamos.</p>
+                </div>
+                <div class="sit3-list">
+
+                    <a href="#plan-emprendedor" class="sit3-row">
+                        <div class="sit3-left">
+                            <span class="sit3-n">01</span>
+                            <div class="sit3-ico"><i data-lucide="rocket"></i></div>
+                        </div>
+                        <div class="sit3-body">
+                            <h3>Voy a emprender</h3>
+                            <p>Quieres darte de alta como autónomo o montar tu empresa. Te acompañamos desde el primer paso hasta la primera factura, con el Bono Tecnológico de 250€ incluido.</p>
+                        </div>
+                        <div class="sit3-right">
+                            <span class="sit3-tag">Plan Emprendedor</span>
+                            <div class="sit3-arrow"><i data-lucide="arrow-right"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#servicios" class="sit3-row">
+                        <div class="sit3-left">
+                            <span class="sit3-n">02</span>
+                            <div class="sit3-ico"><i data-lucide="user-check"></i></div>
+                        </div>
+                        <div class="sit3-body">
+                            <h3>Ya soy autónomo</h3>
+                            <p>Estás dado de alta pero necesitas que alguien te lleve la gestión, te quite el papeleo de encima y esté contigo en los trimestres.</p>
+                        </div>
+                        <div class="sit3-right">
+                            <span class="sit3-tag">Autónomos</span>
+                            <div class="sit3-arrow"><i data-lucide="arrow-right"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#servicios" class="sit3-row">
+                        <div class="sit3-left">
+                            <span class="sit3-n">03</span>
+                            <div class="sit3-ico"><i data-lucide="building-2"></i></div>
+                        </div>
+                        <div class="sit3-body">
+                            <h3>Tengo una empresa</h3>
+                            <p>Buscas un equipo que cubra fiscal, contable, laboral y jurídico bajo el mismo techo, con coordinación real entre áreas.</p>
+                        </div>
+                        <div class="sit3-right">
+                            <span class="sit3-tag">Empresas</span>
+                            <div class="sit3-arrow"><i data-lucide="arrow-right"></i></div>
+                        </div>
+                    </a>
+
+                    <a href="#tu-oficina" class="sit3-row">
+                        <div class="sit3-left">
+                            <span class="sit3-n">04</span>
+                            <div class="sit3-ico"><i data-lucide="inbox"></i></div>
+                        </div>
+                        <div class="sit3-body">
+                            <h3>Necesito apoyo administrativo</h3>
+                            <p>No tienes tiempo para facturas, presupuestos y correos. Externaliza tu administración en Tribulex desde 49€/mes sin contratar a nadie.</p>
+                        </div>
+                        <div class="sit3-right">
+                            <span class="sit3-tag">Tu Oficina</span>
+                            <div class="sit3-arrow"><i data-lucide="arrow-right"></i></div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ④ PLAN EMPRENDEDOR -->
+        <section id="plan-emprendedor" class="section-padding pe2-section">
+            <div class="container">
+                <div class="pe2-wrap">
+
+                    <!-- Panel oscuro izquierdo -->
+                    <div class="pe2-dark">
+                        <span class="label-tag label-star">★ Servicio estrella</span>
+                        <h2 class="pe2-title">Plan Emprendedor</h2>
+                        <p class="pe2-claim">De la idea a la facturación. Sin sustos. Sin papeles que se pierdan.</p>
+                        <p class="pe2-desc">El servicio completo para quien quiere emprender bien desde el principio. Te acompañamos en cada paso: desde elegir la forma jurídica hasta arrancar con tus herramientas digitales.</p>
+                        <div class="pe2-ctas">
+                            <a href="#contacto" class="btn btn-gold">Quiero saber más</a>
+                            <a href="#contacto" class="btn btn-outline-white">Primera consulta gratuita</a>
+                        </div>
+                    </div>
+
+                    <!-- Panel claro derecho -->
+                    <div class="pe2-light">
+                        <p class="pe2-light-label">Qué incluye el plan</p>
+                        <div class="pe2-items">
+
+                            <div class="pe2-item">
+                                <span class="pe2-n">01</span>
+                                <div>
+                                    <strong>Alta correcta desde el primer día</strong>
+                                    <p>Estudio de viabilidad sin coste, alta censal y en el RETA incluidos.</p>
+                                </div>
+                            </div>
+
+                            <div class="pe2-item">
+                                <span class="pe2-n">02</span>
+                                <div>
+                                    <strong>Capitalización y bonificaciones</strong>
+                                    <p>Gestión del paro, tarifa plana, subvenciones e incentivos disponibles.</p>
+                                </div>
+                            </div>
+
+                            <div class="pe2-item">
+                                <span class="pe2-n">03</span>
+                                <div>
+                                    <strong>Asesoría continua incluida</strong>
+                                    <p>Acompañamiento real desde el primer día, sin coste adicional.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pe2-bono">
+                            <div class="pe2-bono-amount">250€</div>
+                            <div class="pe2-bono-text">
+                                <strong>Bono Tecnológico de regalo</strong>
+                                <p>Web, correo profesional y facturación electrónica Verifactu. En colaboración con Lexy. Compatible con capitalización del paro y subvenciones.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑤ TU OFICINA EN TRIBULEX -->
+        <section id="tu-oficina" class="section-padding ofic3-section">
+            <div class="container">
+                <div class="ofic3-layout">
+
+                    <!-- Izquierda: intro + comparativa editorial -->
+                    <div class="ofic3-left">
+                        <div class="ofic3-intro">
+                            <span class="label-tag label-new">★ Nuevo servicio</span>
+                            <h2 class="ofic3-h2">Tu Oficina<br>en Tribulex</h2>
+                            <p class="ofic3-claim">Tu oficina y tu administrativo. Desde 49€/mes.</p>
+                            <p class="ofic3-body">Delega el papeleo en Tribulex y dedica tu tiempo a lo que genera negocio. Sin contratar a nadie.</p>
+                        </div>
+
+                        <div class="ofic3-vs">
+                            <div class="ofic3-vs-heads">
+                                <span>Administrativo propio</span>
+                                <span>Tu Oficina en Tribulex</span>
+                            </div>
+                            <div class="ofic3-vs-row">
+                                <div class="ofic3-vs-old">Más de 1.000€/mes</div>
+                                <div class="ofic3-vs-new">Desde 49€/mes</div>
+                            </div>
+                            <div class="ofic3-vs-row">
+                                <div class="ofic3-vs-old">Coste fijo siempre</div>
+                                <div class="ofic3-vs-new">Pagas lo que usas</div>
+                            </div>
+                            <div class="ofic3-vs-row">
+                                <div class="ofic3-vs-old">Gestión laboral propia</div>
+                                <div class="ofic3-vs-new">Sin contratación ni baja</div>
+                            </div>
+                            <div class="ofic3-vs-row">
+                                <div class="ofic3-vs-old">Un solo perfil</div>
+                                <div class="ofic3-vs-new">Equipo de Tribulex a tu lado</div>
+                            </div>
+                            <div class="ofic3-vs-row">
+                                <div class="ofic3-vs-old">Sin sala de reuniones</div>
+                                <div class="ofic3-vs-new">Sala de juntas disponible</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Derecha: panel oscuro — precio + servicios + CTAs -->
+                    <div class="ofic3-panel">
+                        <p class="ofic3-price-label">Desde solo</p>
+                        <div class="ofic3-price-big">49<sup>€</sup><em>/mes</em></div>
+                        <p class="ofic3-price-sub">Sin contratar a nadie. Sin costes fijos.</p>
+
+                        <div class="ofic3-divider"></div>
+
+                        <div class="ofic3-svcs">
+                            <div class="ofic3-svc">
+                                <i data-lucide="file-text"></i>
+                                <span>Presupuestos, facturas y control de cobros</span>
+                            </div>
+                            <div class="ofic3-svc">
+                                <i data-lucide="mail"></i>
+                                <span>Gestión del correo y documentación CAE</span>
+                            </div>
+                            <div class="ofic3-svc">
+                                <i data-lucide="users"></i>
+                                <span>Sala de juntas para reunirte con clientes</span>
+                            </div>
+                            <div class="ofic3-svc">
+                                <i data-lucide="link-2"></i>
+                                <span>Integrado con tu asesoría Tribulex</span>
+                            </div>
+                        </div>
+
+                        <div class="ofic3-ctas">
+                            <a href="#contacto" class="btn btn-gold">Ver paquetes y precios</a>
+                            <a href="#contacto" class="btn btn-outline-white">¿Cuánto me ahorraría?</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑥ POR QUÉ TRIBULEX -->
+        <section id="nosotros" class="section-padding why-section">
+            <div class="container">
+
+                <div class="why-header">
+                    <div>
+                        <p class="why-eyebrow">¿Por qué Tribulex?</p>
+                        <h2 class="color-white">Una asesoría distinta</h2>
+                    </div>
+                    <p class="why-sub">Lo que nos diferencia no es lo que hacemos, sino cómo lo hacemos y para quién.</p>
+                </div>
+
+                <div class="why-bento">
+
+                    <!-- Card 1 — ancha (2 cols) -->
+                    <div class="why-card">
+                        <img src="../../assets/img/hero-office.png" alt="Acompañamiento real en Tribulex" class="why-img">
+                        <img src="../../assets/images/home/porque_tribulex.png" alt="Check" class="why-check">
+                        <div class="why-body">
+                            <span class="why-n">01</span>
+                            <h3>Acompañamiento real</h3>
+                            <p>No somos solo los que presentan tus impuestos a final de trimestre. Estamos contigo desde que decides emprender, cuando tienes dudas, cuando creces y cuando necesitas tomar decisiones importantes.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 — estrecha (1 col) -->
+                    <div class="why-card">
+                        <img src="../../assets/img/hero-office.png" alt="Tecnología de tu lado" class="why-img" style="object-position: right center;">
+                        <img src="../../assets/images/home/porque_tribulex.png" alt="Check" class="why-check">
+                        <div class="why-body">
+                            <span class="why-n">02</span>
+                            <h3>Tecnología de tu lado</h3>
+                            <p>Integramos herramientas digitales para que trabajes con más eficiencia. Desde Verifactu hasta automatizaciones y presencia digital. Con el Bono Tecnológico de 250€.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 — estrecha (1 col) -->
+                    <div class="why-card">
+                        <img src="../../assets/img/hero-office.png" alt="Cerca de ti en Murcia" class="why-img" style="object-position: left top;">
+                        <img src="../../assets/images/home/porque_tribulex.png" alt="Check" class="why-check">
+                        <div class="why-body">
+                            <span class="why-n">03</span>
+                            <h3>Cerca de ti en Murcia</h3>
+                            <p>Tres oficinas en la región: Alhama de Murcia, Totana y Fuenteálamo. Presencial cuando la necesitas, online cuando no puedes desplazarte.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 — ancha (2 cols) -->
+                    <div class="why-card">
+                        <img src="../../assets/img/hero-office.png" alt="Un equipo completo en Tribulex" class="why-img" style="object-position: center bottom;">
+                        <img src="../../assets/images/home/porque_tribulex.png" alt="Check" class="why-check">
+                        <div class="why-body">
+                            <span class="why-n">04</span>
+                            <h3>Un equipo completo bajo el mismo techo</h3>
+                            <p>Fiscalistas, laboralistas, contables, mercantilistas y abogados coordinados. No necesitas buscar varios profesionales: en Tribulex tienes a todos trabajando juntos para ti.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑦ TODOS LOS SERVICIOS -->
+        <section id="servicios" class="section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Asesoramiento para cada situación</h2>
+                    <p class="section-sub">Cubrimos todas las áreas que tu actividad puede necesitar.</p>
+                </div>
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <img src="../../assets/images/home/all-services_fiscal.png" alt="Asesoría fiscal" class="svc-img">
+                        <h3>Asesoría fiscal</h3>
+                        <p>Planificación y gestión tributaria para autónomos y empresas.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="../../assets/images/home/all-services_laboral.png" alt="Asesoría laboral" class="svc-img">
+                        <h3>Asesoría laboral</h3>
+                        <p>Nóminas, contratos y cumplimiento normativo.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="../../assets/images/home/all-services_contable.png" alt="Asesoría contable" class="svc-img">
+                        <h3>Asesoría contable</h3>
+                        <p>Control contable preciso para una toma de decisiones informada.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="../../assets/images/home/all-services_juridico-mercantil.png" alt="Asesoría jurídico-mercantil" class="svc-img">
+                        <h3>Asesoría jurídico-mercantil</h3>
+                        <p>Contratos, sociedades y operaciones mercantiles.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="../../assets/images/home/all-services_propietarios.png" alt="Comunidades de propietarios" class="svc-img">
+                        <h3>Comunidades de propietarios</h3>
+                        <p>Gestión integral con transparencia y eficacia.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <img src="../../assets/images/home/all-services_abogados.png" alt="Abogados" class="svc-img">
+                        <h3>Abogados</h3>
+                        <p>Familia, civil, penal, tráfico, extranjería y más.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- OFICINAS -->
+        <section id="oficinas" class="section-padding ofc-section">
+            <div class="container">
+
+                <div class="section-header text-center">
+                    <h2>Tres oficinas en la Región de Murcia</h2>
+                    <p class="section-sub">Atención presencial cuando la necesitas, online cuando no puedes desplazarte.</p>
+                </div>
+
+                <div class="ofc-grid">
+
+                    <!-- Oficina 1 — Alhama de Murcia -->
+                    <div class="ofc-card">
+                        <div class="ofc-map">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Av.+Constantino+López+s/n+30840+Alhama+de+Murcia&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Oficina Alhama de Murcia">
+                            </iframe>
+                        </div>
+                        <div class="ofc-info">
+                            <h3 class="ofc-city">Alhama de Murcia</h3>
+                            <ul class="ofc-details">
+                                <li>
+                                    <i data-lucide="map-pin"></i>
+                                    <span>Av. Constantino López, s/n · 30840 Alhama de Murcia</span>
+                                </li>
+                                <li>
+                                    <i data-lucide="phone"></i>
+                                    <a href="tel:968636018">968 636 018</a>
+                                </li>
+                                <li>
+                                    <i data-lucide="clock"></i>
+                                    <span>Lun–Vie · 9:00–14:00 h <span class="ofc-summer">(verano: 9:00–15:00 h)</span></span>
+                                </li>
+                            </ul>
+                            <a href="https://maps.google.com/maps?q=Av.+Constantino+López+s/n+30840+Alhama+de+Murcia" target="_blank" rel="noopener" class="ofc-maps-btn">
+                                <i data-lucide="map"></i> Ver en Google Maps
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Oficina 2 — Totana -->
+                    <div class="ofc-card ofc-card--soon">
+                        <div class="ofc-map">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Totana+Murcia+España&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Oficina Totana">
+                            </iframe>
+                            <div class="ofc-map-overlay">
+                                <span>Dirección próximamente</span>
+                            </div>
+                        </div>
+                        <div class="ofc-info">
+                            <h3 class="ofc-city">Totana</h3>
+                            <ul class="ofc-details">
+                                <li>
+                                    <i data-lucide="map-pin"></i>
+                                    <span class="ofc-pending">Dirección pendiente de confirmar</span>
+                                </li>
+                                <li>
+                                    <i data-lucide="clock"></i>
+                                    <span>Lun–Vie · 9:00–14:00 h</span>
+                                </li>
+                            </ul>
+                            <span class="ofc-soon-tag">Próximamente</span>
+                        </div>
+                    </div>
+
+                    <!-- Oficina 3 — Fuenteálamo -->
+                    <div class="ofc-card ofc-card--soon">
+                        <div class="ofc-map">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Fuentealamo+Murcia+España&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" title="Oficina Fuenteálamo">
+                            </iframe>
+                            <div class="ofc-map-overlay">
+                                <span>Dirección próximamente</span>
+                            </div>
+                        </div>
+                        <div class="ofc-info">
+                            <h3 class="ofc-city">Fuenteálamo</h3>
+                            <ul class="ofc-details">
+                                <li>
+                                    <i data-lucide="map-pin"></i>
+                                    <span class="ofc-pending">Dirección pendiente de confirmar</span>
+                                </li>
+                                <li>
+                                    <i data-lucide="clock"></i>
+                                    <span>Lun–Vie · 9:00–14:00 h</span>
+                                </li>
+                            </ul>
+                            <span class="ofc-soon-tag">Próximamente</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑧ REVIEWS -->
+        <section class="section-padding rev2-section">
+            <div class="container">
+
+                <div class="section-header text-center">
+                    <h2>Lo que dicen nuestros clientes</h2>
+                    <p class="section-sub">Más de 25 años acompañando a emprendedores y autónomos en Murcia.</p>
+                </div>
+
+                <!-- Resumen de valoración global estilo Google -->
+                <div class="rev2-summary">
+                    <svg class="rev2-glogo" viewBox="0 0 24 24" width="36" height="36" aria-label="Google">
+                        <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                        <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                        <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                        <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                    </svg>
+                    <div class="rev2-score">4.9</div>
+                    <div class="rev2-summary-right">
+                        <div class="rev2-sum-stars">★★★★★</div>
+                        <p class="rev2-count">Basado en <strong>+150 reseñas</strong> en Google</p>
+                    </div>
+                </div>
+
+                <!-- Cards de ejemplo — el equipo de implementación sustituye por widget real -->
+                <div class="rev2-grid">
+
+                    <div class="rev2-card">
+                        <div class="rev2-top">
+                            <div class="rev2-avatar" style="--av: #4285F4;">MG</div>
+                            <div class="rev2-user">
+                                <p class="rev2-name">María García</p>
+                                <p class="rev2-when">hace 3 semanas</p>
+                            </div>
+                            <svg class="rev2-g" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                        <div class="rev2-stars">★★★★★</div>
+                        <p class="rev2-text">Llevamos con Tribulex más de 3 años. El equipo es muy cercano y siempre están disponibles cuando los necesitas. Nos ayudaron con la capitalización del paro cuando emprendimos y fue todo un éxito. Muy recomendables.</p>
+                    </div>
+
+                    <div class="rev2-card">
+                        <div class="rev2-top">
+                            <div class="rev2-avatar" style="--av: #EA4335;">AM</div>
+                            <div class="rev2-user">
+                                <p class="rev2-name">Antonio Martínez</p>
+                                <p class="rev2-when">hace 1 mes</p>
+                            </div>
+                            <svg class="rev2-g" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                        <div class="rev2-stars">★★★★★</div>
+                        <p class="rev2-text">Me dieron de alta como autónomo con el Plan Emprendedor. Todo rapidísimo y sin complicaciones. Me explicaron las bonificaciones de la tarifa plana que ni sabía que existían. Un servicio excelente de principio a fin.</p>
+                    </div>
+
+                    <div class="rev2-card">
+                        <div class="rev2-top">
+                            <div class="rev2-avatar" style="--av: #34A853;">LS</div>
+                            <div class="rev2-user">
+                                <p class="rev2-name">Laura Sánchez</p>
+                                <p class="rev2-when">hace 2 meses</p>
+                            </div>
+                            <svg class="rev2-g" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                        <div class="rev2-stars">★★★★★</div>
+                        <p class="rev2-text">Profesionales de verdad. Llevo una pequeña empresa y gestionan contabilidad, nóminas y asesoramiento jurídico bajo el mismo techo. No tener que ir a distintos sitios para cada gestión es una ventaja enorme.</p>
+                    </div>
+
+                    <div class="rev2-card">
+                        <div class="rev2-top">
+                            <div class="rev2-avatar" style="--av: #9C27B0;">CL</div>
+                            <div class="rev2-user">
+                                <p class="rev2-name">Carlos López</p>
+                                <p class="rev2-when">hace 4 meses</p>
+                            </div>
+                            <svg class="rev2-g" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                        <div class="rev2-stars">★★★★★</div>
+                        <p class="rev2-text">Llevo años con otras gestorías y ninguna se había preocupado por mi negocio como Tribulex. Siempre con soluciones, nunca con excusas. El equipo de la oficina de Alhama es excelente.</p>
+                    </div>
+
+                    <div class="rev2-card">
+                        <div class="rev2-top">
+                            <div class="rev2-avatar" style="--av: #00BCD4;">IF</div>
+                            <div class="rev2-user">
+                                <p class="rev2-name">Isabel Fernández</p>
+                                <p class="rev2-when">hace 5 meses</p>
+                            </div>
+                            <svg class="rev2-g" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                        <div class="rev2-stars">★★★★★</div>
+                        <p class="rev2-text">Nos ayudaron a solicitar subvenciones que desconocíamos totalmente. Muy claros en todo el proceso y sin cobrar de más. Totalmente recomendables para cualquier autónomo que empiece.</p>
+                    </div>
+
+                    <div class="rev2-card">
+                        <div class="rev2-top">
+                            <div class="rev2-avatar" style="--av: #F57C00;">JR</div>
+                            <div class="rev2-user">
+                                <p class="rev2-name">Javier Ruiz</p>
+                                <p class="rev2-when">hace 6 meses</p>
+                            </div>
+                            <svg class="rev2-g" viewBox="0 0 24 24" width="20" height="20">
+                                <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+                                <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+                                <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+                                <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+                            </svg>
+                        </div>
+                        <div class="rev2-stars">★★★★★</div>
+                        <p class="rev2-text">El Bono Tecnológico de 250€ del Plan Emprendedor nos vino genial para montar la web y el correo profesional. Un detalle que marca la diferencia respecto a otras asesorías. 100% recomendado.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑨ BLOG -->
+        <section id="blog" class="section-padding blg-section">
+            <div class="container">
+
+                <div class="blg-header">
+                    <div>
+                        <h2>Recursos para emprendedores y autónomos</h2>
+                        <p class="blg-sub">Guías prácticas, novedades fiscales y todo lo que necesitas para gestionar mejor tu negocio.</p>
+                    </div>
+                    <a href="#" class="btn btn-outline btn-sm">Ver todos los artículos <i data-lucide="arrow-right"></i></a>
+                </div>
+
+                <div class="blg-grid">
+
+                    <!-- Card 1 — foto real -->
+                    <article class="blg-card">
+                        <div class="blg-img-wrap">
+                            <img src="../../assets/images/home/blog-autonomo.png" alt="Alta como autónomo 2026" class="blg-img">
+                            <span class="blg-cat blg-cat--fiscal">Fiscal</span>
+                        </div>
+                        <div class="blg-body">
+                            <h3>Cómo darte de alta como autónomo en 2026: pasos y costes reales</h3>
+                            <p>Todo lo que necesitas saber para empezar tu actividad sin sorpresas ni trámites innecesarios.</p>
+                            <div class="blg-foot">
+                                <div class="blg-author">
+                                    <div class="blg-av">T</div>
+                                    <span>Equipo Tribulex · 5 min</span>
+                                </div>
+                                <a href="#" class="blg-lnk">Leer <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2 — segunda foto -->
+                    <article class="blg-card">
+                        <div class="blg-img-wrap">
+                            <img src="../../assets/images/home/blog-capitalizacion.png" alt="Capitalización del paro Murcia" class="blg-img">
+                            <span class="blg-cat blg-cat--emp">Emprendedores</span>
+                        </div>
+                        <div class="blg-body">
+                            <h3>Capitalización del paro: qué es y cómo solicitarla en Murcia</h3>
+                            <p>Aprovecha la prestación por desempleo para financiar tu nuevo proyecto con todas las garantías.</p>
+                            <div class="blg-foot">
+                                <div class="blg-author">
+                                    <div class="blg-av">T</div>
+                                    <span>Equipo Tribulex · 4 min</span>
+                                </div>
+                                <a href="#" class="blg-lnk">Leer <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 — placeholder gradiente hasta tener foto -->
+                    <article class="blg-card">
+                        <div class="blg-img-wrap">
+                            <img src="../../assets/images/home/blog-verifactu.png" alt="Verifactu y factura electrónica" class="blg-img">
+                            <span class="blg-cat blg-cat--tech">Tecnología</span>
+                        </div>
+                        <div class="blg-body">
+                            <h3>Verifactu y la factura electrónica obligatoria: guía práctica para autónomos</h3>
+                            <p>Prepárate para la nueva normativa sin complicaciones técnicas. Todo lo que necesitas saber.</p>
+                            <div class="blg-foot">
+                                <div class="blg-author">
+                                    <div class="blg-av">T</div>
+                                    <span>Equipo Tribulex · 6 min</span>
+                                </div>
+                                <a href="#" class="blg-lnk">Leer <i data-lucide="arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ⑩ CTA FINAL -->
+        <section id="contacto" class="cta2-section">
+
+            <!-- Columna izquierda: copy + CTAs -->
+            <div class="cta2-text">
+                <div class="cta2-inner">
+                    <span class="cta2-eyebrow">Primera consulta gratuita</span>
+                    <h2 class="cta2-h2">¿Listo para<br>empezar?</h2>
+                    <p class="cta2-sub">Cuéntanos tu proyecto y te decimos exactamente cómo podemos ayudarte. Sin compromisos. Sin letra pequeña.</p>
+                    <p class="cta2-note">Solo una conversación para ver si encajamos.</p>
+                    <div class="cta2-btns">
+                        <a href="tel:968636018" class="btn btn-gold">Habla con nosotros</a>
+                        <a href="#plan-emprendedor" class="btn btn-outline-white">Ver el Plan Emprendedor</a>
+                    </div>
+                    <a href="tel:968636018" class="cta2-phone">
+                        <i data-lucide="phone"></i>
+                        <span>968 636 018</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Columna derecha: foto real full-bleed -->
+            <div class="cta2-photo" aria-hidden="true">
+                <img src="../../assets/img/hero-office.png" alt="" class="cta2-img">
+                <div class="cta2-overlay"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+                <img src="../../assets/logo/logo-tribulex-blanco.svg" alt="Tribulex" class="footer-logo">
+                <p class="footer-slogan">Más que una asesoría: tu equipo para emprender.</p>
+                <div class="footer-contact">
+                    <a href="tel:968636018"><i data-lucide="phone"></i> 968 636 018</a>
+                    <a href="mailto:info@tribulex.es"><i data-lucide="mail"></i> info@tribulex.es</a>
+                    <a href="https://tribulex.asesoriaweb.com" target="_blank" rel="noopener"><i data-lucide="log-in"></i> Acceso clientes</a>
+                    <span class="footer-hours"><i data-lucide="clock"></i> Lun–Vie · 9:00–14:00 h (verano: 9:00–15:00 h)</span>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h5>Servicios</h5>
+                <ul>
+                    <li><a href="#servicios">Asesoría fiscal</a></li>
+                    <li><a href="#servicios">Asesoría laboral</a></li>
+                    <li><a href="#servicios">Asesoría contable</a></li>
+                    <li><a href="#servicios">Asesoría jurídico-mercantil</a></li>
+                    <li><a href="#servicios">Comunidades de propietarios</a></li>
+                    <li><a href="#servicios">Abogados</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Para emprendedores</h5>
+                <ul>
+                    <li><a href="#plan-emprendedor">Plan Emprendedor</a></li>
+                    <li><a href="#plan-emprendedor">Capitalización del paro</a></li>
+                    <li><a href="#plan-emprendedor">Bono Tecnológico 250€</a></li>
+                    <li><a href="#tu-oficina">Tu Oficina en Tribulex</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h5>Síguenos</h5>
+                <div class="social-row">
+                    <a href="#" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Twitter / X">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon fill="#111c27" points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© Tribulex Asesores S.L.L. · <a href="#">Aviso legal</a> · <a href="#">Privacidad</a> · <a href="#">Cookies</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const header      = document.getElementById('main-header');
+        const mobileBtn   = document.getElementById('mobile-btn');
+        const closeBtn    = document.getElementById('mobile-close-btn');
+        const navLinks    = document.getElementById('nav-links');
+        const overlay     = document.getElementById('mobile-overlay');
+
+        // ── Scroll: fondo sólido + ocultar topbar al bajar (solo desktop) ──
+        let lastY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const y = window.scrollY;
+            const goingDown = y > lastY;
+
+            header.classList.toggle('scrolled', y > 60);
+
+            if (window.innerWidth > 768) {
+                if (y > 60) {
+                    header.classList.toggle('topbar-hidden', goingDown);
+                } else {
+                    header.classList.remove('topbar-hidden');
+                }
+            }
+
+            lastY = y <= 0 ? 0 : y;
+        }, { passive: true });
+
+        // ── Menú mobile ──
+        function openMenu() {
+            navLinks.classList.add('open');
+            overlay.classList.add('active');
+            header.classList.add('menu-open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            navLinks.classList.remove('open');
+            overlay.classList.remove('active');
+            header.classList.remove('menu-open');
+            document.body.style.overflow = '';
+            // Cerrar todos los dropdowns abiertos
+            document.querySelectorAll('.nav-item.dropdown-open')
+                .forEach(el => el.classList.remove('dropdown-open'));
+        }
+
+        // Abrir menú con botón hamburguesa
+        mobileBtn.addEventListener('click', openMenu);
+
+        // Cerrar menú con botón X dentro del menú
+        closeBtn.addEventListener('click', closeMenu);
+
+        // Cerrar al pulsar el overlay
+        overlay.addEventListener('click', closeMenu);
+
+        // Cerrar al pulsar cualquier enlace del menú (excepto los dropdown toggles)
+        navLinks.querySelectorAll('a:not(.nav-item > a)').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Cerrar con Escape
+        document.addEventListener('keydown', e => {
+            if (e.key === 'Escape' && navLinks.classList.contains('open')) closeMenu();
+        });
+
+        // ── Dropdowns mobile: tap para abrir/cerrar ──
+        document.querySelectorAll('.has-dropdown').forEach(item => {
+            item.querySelector(':scope > a').addEventListener('click', e => {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    const isOpen = item.classList.contains('dropdown-open');
+                    // Cerrar otros
+                    document.querySelectorAll('.nav-item.dropdown-open')
+                        .forEach(el => el.classList.remove('dropdown-open'));
+                    if (!isOpen) item.classList.add('dropdown-open');
+                }
+            });
+        });
+
+        // Cerrar menú al hacer resize a desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 768 && navLinks.classList.contains('open')) {
+                closeMenu();
+            }
+        });
+    </script>
+</body>
+</html>
