@@ -1073,7 +1073,7 @@ header.scrolled .nav-content { padding: 0.55rem 0; }
 /* ── SERVICES ── */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--sp-md);
 }
 .service-card {
@@ -1109,7 +1109,7 @@ header.scrolled .nav-content { padding: 0.55rem 0; }
 
 .ofc-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--sp-md);
 }
 
@@ -1239,6 +1239,21 @@ header.scrolled .nav-content { padding: 0.55rem 0; }
 }
 .ofc-maps-btn svg { width: 14px; height: 14px; stroke-width: 2; }
 .ofc-maps-btn:hover { background: var(--c-700); }
+
+.ofc-specialty {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--c-500);
+  background: var(--c-info-bg);
+  border: 1px solid var(--c-300);
+  border-radius: var(--r-sm);
+  padding: 0.4rem 0.65rem;
+  margin-bottom: var(--sp-sm);
+}
+.ofc-specialty svg { width: 12px; height: 12px; stroke-width: 2; flex-shrink: 0; }
 
 .ofc-soon-tag {
   display: inline-flex;
@@ -1884,7 +1899,10 @@ footer { background: var(--c-900); padding-top: var(--sp-xxl); }
   .services-grid,
   .rev2-grid,
   .blg-grid { grid-template-columns: repeat(2, 1fr); }
-  .ofc-grid { grid-template-columns: 1fr; }
+  .ofc-grid { grid-template-columns: repeat(2, 1fr); }
+  .nav-item > a,
+  .nav-item-link { padding: 0.4rem 0.5rem; font-size: 0.8rem; }
+  .nav-links { gap: 0; }
 }
 
 @media (max-width: 768px) {
