@@ -513,19 +513,18 @@ header.scrolled .nav-content { padding: 0.55rem 0; }
 
 .sit3-header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  gap: var(--sp-lg);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--sp-xs);
   margin-bottom: var(--sp-xl);
 }
 .sit3-header h2 { font-size: clamp(1.75rem, 3vw, 2.4rem); margin-bottom: 0; }
 .sit3-subtitle {
   font-size: 1rem;
   color: var(--c-muted);
-  max-width: 260px;
-  text-align: right;
+  max-width: 560px;
+  text-align: left;
   line-height: 1.55;
-  flex-shrink: 0;
 }
 
 .sit3-list { display: flex; flex-direction: column; }
@@ -1880,8 +1879,6 @@ footer { background: var(--c-900); padding-top: var(--sp-xxl); }
 /* ── RESPONSIVE ── */
 @media (max-width: 1100px) {
   .hero-layout { grid-template-columns: 1fr 360px; gap: var(--sp-xl); }
-  .sit3-header { flex-direction: column; align-items: flex-start; }
-  .sit3-subtitle { text-align: left; max-width: 100%; }
   .pe2-wrap { grid-template-columns: 300px 1fr; }
   .ofic3-layout { grid-template-columns: 1fr 280px; }
   .why-bento { grid-template-columns: repeat(2, 1fr); }
@@ -2143,6 +2140,11 @@ footer { background: var(--c-900); padding-top: var(--sp-xxl); }
   .cta-actions .btn { width: 100%; }
 
   .footer-grid { grid-template-columns: 1fr; gap: var(--sp-lg); }
+
+  .cta2-section { grid-template-columns: 1fr; }
+  .cta2-photo { min-height: 260px; }
+  .cta2-text { padding: var(--sp-xl) var(--sp-lg); }
+  .cta2-text::before { display: none; }
 }
 
 @media (max-width: 480px) {
@@ -2150,4 +2152,16 @@ footer { background: var(--c-900); padding-top: var(--sp-xxl); }
   .stat-sep { display: none; }
   .compare-head,
   .compare-row { font-size: 0.78rem; padding: 0.65rem 0.75rem; }
+
+  .hero-stats { flex-wrap: wrap; gap: var(--sp-sm) var(--sp-md); }
+  .hstat-sep { display: none; }
+  .hstat { flex: 0 0 calc(50% - 0.75rem); }
+
+  .pe2-bono { flex-direction: column; gap: var(--sp-sm); }
+
+  .sit3-row { padding: var(--sp-md) var(--sp-sm); }
+
+  .cta2-h2 { font-size: clamp(2.4rem, 8vw, 3.5rem); }
+  .cta2-btns { flex-direction: column; }
+  .cta2-btns .btn { width: 100%; justify-content: center; }
 }
