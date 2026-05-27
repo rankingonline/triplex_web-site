@@ -196,6 +196,9 @@ header.topbar-hidden .topbar {
 /* Cuando el menú mobile está abierto */
 header.menu-open {
   background: var(--c-900);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
   z-index: 200;
 }
 
@@ -1936,12 +1939,12 @@ footer { background: var(--c-900); padding-top: var(--sp-xxl); }
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
   }
   .mobile-overlay.active {
     opacity: 1;
     visibility: visible;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
   }
 
   /* ── Slide-in drawer from the right ── */
@@ -2104,20 +2107,26 @@ footer { background: var(--c-900); padding-top: var(--sp-xxl); }
   /* ── Cuando el menú está abierto ── */
   header.menu-open {
     background: var(--c-900);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
     z-index: 200;
   }
 
   /* ── Hero: columna única en mobile ── */
   .hero { padding-top: 120px; padding-bottom: var(--sp-xl); }
-  .hero-layout { grid-template-columns: 1fr; gap: var(--sp-xl); }
-  .hero-text h1 { max-width: 100%; }
-  .hero-body { max-width: 100%; }
-  .hero-actions { flex-direction: column; }
+  /* display:contents en hero-text hace que sus hijos sean ítems directos del grid */
+  .hero-layout { grid-template-columns: 1fr; gap: 0; }
+  .hero-text { display: contents; }
+  .hero-eyebrow { order: 1; }
+  .hero-text h1 { max-width: 100%; order: 2; }
+  .hero-body { max-width: 100%; order: 3; }
+  /* Tarjeta: entre el subtítulo y los CTAs */
+  .hero-card { order: 4; margin-top: var(--sp-lg); margin-bottom: var(--sp-lg); }
+  .hero-actions { flex-direction: column; order: 5; }
   .hero-actions .btn { width: 100%; justify-content: center; }
-  .hero-stats { gap: var(--sp-md); }
+  .hero-stats { gap: var(--sp-md); order: 6; }
   .hstat strong { font-size: 1.25rem; }
-  /* La tarjeta va debajo en mobile */
-  .hero-card { order: -1; }
 
   .stats-grid { flex-wrap: wrap; }
   .stat-item { flex: 0 0 calc(50% - 1px); }
