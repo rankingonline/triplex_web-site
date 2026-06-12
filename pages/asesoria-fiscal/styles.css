@@ -1,0 +1,689 @@
+/*
+ * ════════════════════════════════════════════════════════════════
+ *  TRIBULEX — Inner Page Styles (Plantilla páginas de servicio)
+ *  Extiende: ../home/styles.css  (carga antes que este archivo)
+ *  Reutilizar en: todas las páginas internas de servicio
+ * ════════════════════════════════════════════════════════════════
+ */
+
+/* ── Scroll offset para el header fijo ── */
+[id] { scroll-margin-top: 90px; }
+
+/* ── Eyebrow de sección genérico ── */
+.sec-eyebrow {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--c-500);
+  margin-bottom: var(--sp-xs);
+  display: block;
+}
+.sec-eyebrow--gold { color: var(--c-gold); }
+
+/* ── Section header inline (h2 + sub) ── */
+.ip-section-header { margin-bottom: var(--sp-xl); }
+.ip-section-header h2 { font-size: clamp(1.75rem, 3vw, 2.4rem); margin-bottom: 0.75rem; }
+.ip-section-header .ip-section-sub { font-size: 1rem; color: var(--c-muted); max-width: 600px; line-height: 1.65; }
+.ip-section-header.text-center .ip-section-sub { margin: 0 auto; }
+
+/* ──────────────────────────────────────────────────────
+   1. HERO INTERNO
+───────────────────────────────────────────────────── */
+.ip-hero {
+  background-color: var(--c-900);
+  background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
+  background-size: 28px 28px;
+  padding-top: 140px;
+  padding-bottom: var(--sp-xxl);
+}
+
+/* Breadcrumb */
+.ip-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.74rem;
+  color: rgba(255,255,255,0.35);
+  margin-bottom: var(--sp-lg);
+}
+.ip-breadcrumb a {
+  color: rgba(255,255,255,0.5);
+  transition: color 0.2s;
+}
+.ip-breadcrumb a:hover { color: var(--c-gold); }
+
+/* Layout 2 columnas: texto | imagen */
+.ip-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--sp-xxl);
+  align-items: center;
+}
+
+/* Columna texto */
+.ip-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.45);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+.ip-eyebrow-dot {
+  display: inline-block;
+  width: 6px; height: 6px;
+  background: var(--c-gold);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.ip-hero h1 {
+  font-size: clamp(1.85rem, 3.4vw, 2.8rem);
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: var(--sp-md);
+}
+.ip-body {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+  max-width: 540px;
+  margin-bottom: var(--sp-sm);
+}
+.ip-body:last-of-type { margin-bottom: var(--sp-lg); }
+
+/* Columna imagen */
+.ip-media { position: relative; }
+.ip-img-wrap {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  height: 440px;
+  box-shadow: 0 32px 64px rgba(0,0,0,0.35);
+}
+.ip-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.ip-img-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(145deg, rgba(17,28,39,0.5) 0%, transparent 55%);
+}
+/* Badge estadísticas sobre la imagen */
+.ip-trust-badge {
+  position: absolute;
+  bottom: var(--sp-md);
+  left: var(--sp-md);
+  right: var(--sp-md);
+  background: rgba(17,28,39,0.88);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-md);
+  padding: 0.75rem 1rem;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--sp-sm);
+}
+.ip-trust-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+}
+.ip-trust-item strong {
+  font-family: var(--f-head);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--c-gold);
+}
+.ip-trust-item span {
+  font-size: 0.68rem;
+  color: rgba(255,255,255,0.45);
+  white-space: nowrap;
+}
+.ip-trust-sep {
+  width: 1px;
+  height: 32px;
+  background: rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+
+/* ──────────────────────────────────────────────────────
+   2. QUÉ INCLUYE — override para mantener 2 cols en mobile
+───────────────────────────────────────────────────── */
+.que-incluye-section { background: var(--c-bg); }
+.que-incluye-cta { text-align: center; margin-top: var(--sp-xl); }
+
+/* ──────────────────────────────────────────────────────
+   3. PARA QUIÉN ES — lista editorial de filas
+───────────────────────────────────────────────────── */
+.para-quien-section { background: var(--c-bg); }
+
+.pq-list { border-top: 1px solid var(--c-border-soft); }
+
+.pq-row {
+  display: grid;
+  grid-template-columns: 64px 1fr 1fr;
+  gap: var(--sp-xl);
+  align-items: start;
+  padding: var(--sp-lg) 0;
+  border-bottom: 1px solid var(--c-border-soft);
+  transition: background 0.2s;
+}
+.pq-row:hover { background: var(--c-bg-soft); margin: 0 calc(-1 * var(--sp-sm)); padding-left: var(--sp-sm); padding-right: var(--sp-sm); }
+
+.pq-n {
+  font-family: var(--f-head);
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--c-border);
+  line-height: 1;
+  padding-top: 3px;
+  transition: color 0.2s;
+}
+.pq-row:hover .pq-n { color: var(--c-gold); }
+
+.pq-situation {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--c-900);
+  line-height: 1.5;
+}
+
+.pq-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+.pq-service {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--c-500);
+  line-height: 1.4;
+}
+.pq-goal {
+  font-size: 0.82rem;
+  color: var(--c-muted);
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+.pq-goal::before {
+  content: '→';
+  color: var(--c-gold);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ──────────────────────────────────────────────────────
+   4. CÓMO TRABAJAMOS — stepper horizontal / vertical mobile
+───────────────────────────────────────────────────── */
+.como-section { background: var(--c-bg); }
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--sp-lg);
+  position: relative;
+}
+/* Línea conectora horizontal (desktop) */
+.process-grid::before {
+  content: '';
+  position: absolute;
+  top: 27px;
+  left: calc(12.5% + 10px);
+  right: calc(12.5% + 10px);
+  height: 2px;
+  background: var(--c-border);
+  z-index: 0;
+}
+
+.process-step { position: relative; }
+.process-n {
+  width: 56px; height: 56px;
+  background: var(--c-900);
+  color: var(--c-gold);
+  font-family: var(--f-head);
+  font-size: 1.1rem;
+  font-weight: 800;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--sp-md);
+  position: relative;
+  z-index: 1;
+  border: 4px solid var(--c-bg);
+  box-shadow: 0 0 0 2px var(--c-900);
+  flex-shrink: 0;
+  transition: background 0.25s, color 0.25s, transform 0.25s;
+}
+.process-step:hover .process-n {
+  background: var(--c-gold);
+  color: var(--c-900);
+  transform: scale(1.07);
+}
+.process-step h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--c-900);
+  margin-bottom: 0.45rem;
+  line-height: 1.3;
+}
+.process-step p {
+  font-size: 0.85rem;
+  color: var(--c-muted);
+  line-height: 1.65;
+}
+.process-cta { text-align: center; margin-top: var(--sp-xl); }
+
+/* ──────────────────────────────────────────────────────
+   5. POR QUÉ TRIBULEX — cards dark
+───────────────────────────────────────────────────── */
+.why-fiscal-section { background: var(--c-900); }
+.why-fiscal-section .ip-section-header h2 { color: #fff; }
+.why-fiscal-section .ip-section-sub { color: rgba(255,255,255,0.5); }
+
+.why-fiscal-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--sp-md);
+}
+/* Tarjeta 3 (Bono) — ancho completo */
+.why-fiscal-grid > .wf-card:nth-child(3) { grid-column: 1 / -1; }
+
+.wf-card {
+  background: rgba(255,255,255,0.035);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--r-lg);
+  padding: var(--sp-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: border-color 0.3s, background 0.3s;
+  cursor: default;
+}
+.wf-card:hover {
+  border-color: rgba(251,199,34,0.3);
+  background: rgba(255,255,255,0.055);
+}
+/* Bono card especial */
+.wf-card--bono {
+  background: rgba(251,199,34,0.05);
+  border-color: rgba(251,199,34,0.2);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--sp-xl);
+  align-items: center;
+}
+.wf-card--bono:hover {
+  border-color: rgba(251,199,34,0.45);
+  background: rgba(251,199,34,0.09);
+}
+.wf-card-body { display: flex; flex-direction: column; gap: 0.6rem; }
+.wf-card-n {
+  font-family: var(--f-head);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--c-gold);
+}
+.wf-card h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+}
+.wf-card p {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+}
+.wf-price {
+  display: flex;
+  align-items: baseline;
+  gap: 0.2rem;
+  margin-top: 0.25rem;
+}
+.wf-price-num {
+  font-family: var(--f-head);
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--c-gold);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.wf-price-label {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.4);
+}
+/* Importe grande del Bono */
+.wf-bono-amount {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.wf-bono-num {
+  font-family: var(--f-head);
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--c-gold);
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.wf-bono-eur {
+  font-family: var(--f-head);
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(251,199,34,0.75);
+  padding-top: 0.3rem;
+  letter-spacing: 0;
+  line-height: 1;
+  align-self: flex-start;
+}
+
+/* ──────────────────────────────────────────────────────
+   6. DÓNDE ESTAMOS
+───────────────────────────────────────────────────── */
+.donde-section { background: var(--c-bg-soft); }
+
+.donde-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xxl);
+  align-items: start;
+}
+.donde-intro h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); margin-bottom: var(--sp-sm); }
+.donde-intro p { color: var(--c-muted); line-height: 1.7; margin-bottom: var(--sp-lg); }
+
+.donde-contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: var(--sp-lg);
+}
+.donde-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  color: var(--c-muted);
+}
+.donde-contact-item svg { width: 16px; height: 16px; color: var(--c-500); flex-shrink: 0; stroke-width: 1.5; }
+.donde-contact-item a { color: var(--c-500); font-weight: 500; }
+.donde-contact-item a:hover { color: var(--c-400); }
+
+.donde-map-wrap {
+  border-radius: var(--r-lg);
+  overflow: hidden;
+  height: 360px;
+  box-shadow: var(--sh-md);
+}
+.donde-map-wrap iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+/* ──────────────────────────────────────────────────────
+   7. FORMULARIO DE CONTACTO
+───────────────────────────────────────────────────── */
+.form-section {
+  background-color: var(--c-900);
+  background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.form-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xxl);
+  align-items: start;
+}
+
+.form-intro h2 { color: #fff; font-size: clamp(1.75rem, 2.5vw, 2.4rem); margin-bottom: var(--sp-sm); }
+.form-intro p { color: rgba(255,255,255,0.5); line-height: 1.7; margin-bottom: var(--sp-sm); }
+.form-intro-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--c-gold);
+  background: rgba(251,199,34,0.1);
+  border: 1px solid rgba(251,199,34,0.25);
+  border-radius: var(--r-full);
+  padding: 0.35rem 0.9rem;
+  margin-bottom: var(--sp-lg);
+}
+.form-intro-badge svg { width: 13px; height: 13px; }
+
+.form-contact-divider {
+  padding-top: var(--sp-md);
+  border-top: 1px solid rgba(255,255,255,0.07);
+  margin-top: var(--sp-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.form-contact-link {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.45);
+}
+.form-contact-link svg { width: 14px; height: 14px; color: var(--c-gold); flex-shrink: 0; }
+.form-contact-link a { color: rgba(255,255,255,0.7); font-weight: 500; }
+.form-contact-link a:hover { color: var(--c-gold); }
+
+/* Formulario */
+.cform {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: var(--r-lg);
+  padding: var(--sp-lg);
+}
+.cform-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-sm);
+}
+.cform-field { display: flex; flex-direction: column; gap: 0.35rem; }
+.cform-field.span2 { grid-column: 1 / -1; }
+
+.cform-field label {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.5);
+}
+.cform-field input,
+.cform-field select,
+.cform-field textarea {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--r-sm);
+  padding: 0.7rem 0.9rem;
+  font-family: var(--f-body);
+  font-size: 0.9rem;
+  color: #fff;
+  outline: none;
+  transition: border-color 0.2s, background 0.2s;
+  width: 100%;
+}
+.cform-field input::placeholder,
+.cform-field textarea::placeholder { color: rgba(255,255,255,0.22); }
+.cform-field input:focus,
+.cform-field select:focus,
+.cform-field textarea:focus {
+  border-color: var(--c-gold);
+  background: rgba(255,255,255,0.1);
+}
+.cform-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='rgba(255,255,255,0.3)' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 15px;
+  padding-right: 2.5rem;
+}
+.cform-field select option { background: var(--c-900); color: #fff; }
+.cform-field textarea { resize: vertical; min-height: 100px; }
+
+.cform-submit { margin-top: var(--sp-sm); }
+.cform-submit .btn { width: 100%; justify-content: center; }
+.cform-privacy {
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgba(255,255,255,0.25);
+  margin-top: 0.6rem;
+  line-height: 1.5;
+}
+.cform-privacy a { color: rgba(255,255,255,0.4); text-decoration: underline; }
+
+/* ──────────────────────────────────────────────────────
+   8. FAQ — acordeón nativo con details/summary
+───────────────────────────────────────────────────── */
+.faq-section { background: var(--c-bg-soft); }
+.faq-list { max-width: 780px; margin: 0 auto; }
+
+details.faq-item {
+  border-bottom: 1px solid var(--c-border-soft);
+}
+details.faq-item:first-of-type { border-top: 1px solid var(--c-border-soft); }
+
+details.faq-item > summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--sp-md);
+  padding: var(--sp-md) 0;
+  font-family: var(--f-head);
+  font-size: 0.975rem;
+  font-weight: 600;
+  color: var(--c-900);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s;
+  outline: none;
+}
+details.faq-item > summary::-webkit-details-marker { display: none; }
+details.faq-item > summary::marker { content: none; }
+details.faq-item > summary:hover { color: var(--c-500); }
+details[open] > summary { color: var(--c-500); }
+
+.faq-toggle {
+  width: 28px; height: 28px;
+  border: 1.5px solid var(--c-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: background 0.25s, border-color 0.25s, transform 0.25s;
+  color: var(--c-muted);
+}
+.faq-toggle svg { width: 13px; height: 13px; stroke-width: 2.5; pointer-events: none; }
+details[open] .faq-toggle {
+  background: var(--c-gold);
+  border-color: var(--c-gold);
+  color: var(--c-900);
+  transform: rotate(45deg);
+}
+.faq-body {
+  padding: 0 0 var(--sp-md);
+  font-size: 0.9rem;
+  color: var(--c-muted);
+  line-height: 1.75;
+  max-width: 680px;
+}
+
+/* ──────────────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────────────── */
+@media (max-width: 1100px) {
+  .ip-layout { grid-template-columns: 1fr 340px; gap: var(--sp-xl); }
+}
+
+@media (max-width: 900px) {
+  .ip-layout { grid-template-columns: 1fr 260px; }
+  .process-grid { grid-template-columns: repeat(2, 1fr); }
+  .process-grid::before { display: none; }
+  .donde-layout { grid-template-columns: 1fr; gap: var(--sp-xl); }
+  .donde-map-wrap { height: 280px; }
+  .form-layout { grid-template-columns: 1fr; gap: var(--sp-xl); }
+  .cform-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .ip-hero { padding-top: 110px; padding-bottom: var(--sp-xl); }
+  .ip-layout { grid-template-columns: 1fr; }
+  .ip-media { display: none; }
+  .ip-hero h1, .ip-body { max-width: 100%; }
+
+  /* Mantener 2 cols en servicios en lugar del 1fr del home */
+  .que-incluye-section .services-grid { grid-template-columns: repeat(2, 1fr) !important; }
+
+  /* Para quién: colapsar a 2 cols (número + contenido) */
+  .pq-row { grid-template-columns: 40px 1fr; gap: var(--sp-md); }
+  .pq-meta { padding-top: 0; }
+
+  /* Why fiscal: 1 col */
+  .why-fiscal-grid { grid-template-columns: 1fr; }
+  .why-fiscal-grid > .wf-card:nth-child(3) { grid-column: unset; }
+  .wf-card--bono { grid-template-columns: 1fr; gap: var(--sp-md); }
+  .wf-bono-num { font-size: 3.5rem; }
+  .wf-bono-eur { font-size: 1.6rem; }
+}
+
+@media (max-width: 560px) {
+  /* Stepper vertical en pantallas pequeñas */
+  .process-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .process-step {
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    column-gap: var(--sp-md);
+    padding-bottom: var(--sp-lg);
+    position: relative;
+    align-items: start;
+  }
+  .process-step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 27px;
+    top: 56px;
+    bottom: 0;
+    width: 2px;
+    background: var(--c-border);
+  }
+  .process-n { margin-bottom: 0; }
+  .process-step-body { padding-top: 0.8rem; }
+  .process-step h3,
+  .process-step p { grid-column: unset; }
+  .process-cta { text-align: left; }
+
+  .que-incluye-section .services-grid { grid-template-columns: 1fr !important; }
+
+  /* Para quién: ocultar número en móvil pequeño */
+  .pq-n { display: none; }
+  .pq-row { grid-template-columns: 1fr; }
+  .pq-situation { font-size: 0.95rem; }
+  .wf-bono-num { font-size: 3rem; }
+  .wf-bono-eur { font-size: 1.4rem; }
+}
