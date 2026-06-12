@@ -31,11 +31,17 @@
    1. HERO INTERNO
 ───────────────────────────────────────────────────── */
 .ip-hero {
+  position: relative;
+  overflow: hidden;
   background-color: var(--c-900);
   background-image: radial-gradient(rgba(255,255,255,0.06) 1px, transparent 1px);
   background-size: 28px 28px;
   padding-top: 140px;
   padding-bottom: var(--sp-xxl);
+}
+.ip-hero > .container {
+  position: relative;
+  z-index: 1;
 }
 
 /* Breadcrumb */
@@ -80,6 +86,8 @@
   border-radius: 50%;
   flex-shrink: 0;
 }
+.ip-text { max-width: 50%; }
+
 .ip-hero h1 {
   font-size: clamp(1.85rem, 3.4vw, 2.8rem);
   color: #fff;
@@ -97,24 +105,66 @@
 }
 .ip-body:last-of-type { margin-bottom: var(--sp-lg); }
 
-/* Columna imagen */
-.ip-media { position: relative; }
+/* Stats inline bajo los CTAs (reemplaza el trust-badge sobre la imagen) */
+.ip-hero-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-md);
+  margin-top: var(--sp-lg);
+  padding-top: var(--sp-lg);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.ip-hs-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+.ip-hs-item strong {
+  font-family: var(--f-head);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--c-gold);
+}
+.ip-hs-item span {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+}
+.ip-hs-sep {
+  width: 1px;
+  height: 20px;
+  background: rgba(255,255,255,0.1);
+  flex-shrink: 0;
+}
+
+/* Imagen de fondo: absoluta al hero, sangra al borde derecho */
+.ip-media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 52%;
+  z-index: 0;
+  pointer-events: none;
+}
 .ip-img-wrap {
   position: relative;
-  border-radius: var(--r-lg);
+  width: 100%;
+  height: 100%;
   overflow: hidden;
-  height: 440px;
-  box-shadow: 0 32px 64px rgba(0,0,0,0.35);
+  border-radius: 0;
+  box-shadow: none;
 }
 .ip-img {
   width: 100%; height: 100%;
   object-fit: cover;
   object-position: center;
 }
+/* Fade: izquierda sólido (color hero) → derecha transparente (imagen visible) */
 .ip-img-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(145deg, rgba(17,28,39,0.5) 0%, transparent 55%);
+  background: linear-gradient(to right, var(--c-900) 0%, rgba(17,28,39,0.8) 30%, transparent 65%);
 }
 /* Badge estadísticas sobre la imagen */
 .ip-trust-badge {
@@ -615,11 +665,11 @@ details[open] .faq-toggle {
    RESPONSIVE
 ───────────────────────────────────────────────────── */
 @media (max-width: 1100px) {
-  .ip-layout { grid-template-columns: 1fr 340px; gap: var(--sp-xl); }
+  .ip-media { width: 48%; }
 }
 
 @media (max-width: 900px) {
-  .ip-layout { grid-template-columns: 1fr 260px; }
+  .ip-media { width: 44%; }
   .process-grid { grid-template-columns: repeat(2, 1fr); }
   .process-grid::before { display: none; }
   .donde-layout { grid-template-columns: 1fr; gap: var(--sp-xl); }
@@ -630,8 +680,9 @@ details[open] .faq-toggle {
 
 @media (max-width: 768px) {
   .ip-hero { padding-top: 110px; padding-bottom: var(--sp-xl); }
-  .ip-layout { grid-template-columns: 1fr; }
   .ip-media { display: none; }
+  .ip-text { max-width: 100%; }
+  .ip-hero-stats { gap: var(--sp-sm); flex-wrap: wrap; }
   .ip-hero h1, .ip-body { max-width: 100%; }
 
   /* Mantener 2 cols en servicios en lugar del 1fr del home */
